@@ -3,7 +3,7 @@ $(function() {
     {
       action: 'type',
       strings: ["about me"],
-      output: 'Kenneth Kim / University of Texas at Austin 2023<br>Chemical Engineering<br><br>',
+      output: 'Kenneth Kim / University of Texas at Austin 2023 Chemical Engineering<br><br>',
       postDelay: 1000
     },
   { 
