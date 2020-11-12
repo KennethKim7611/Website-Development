@@ -8,7 +8,7 @@ $(function() {
     },
   { 
     action: 'type',
-    strings: ["Read my editorials :) ", 'Select language to enter!!'],
+    strings: ["Read my editorials :) ", 'Select language to enter!!!'],
     postDelay: 1000
   },
   
