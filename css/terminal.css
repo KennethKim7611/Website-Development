@@ -93,6 +93,7 @@ text-align: left;
     border-radius: .625rem;
     margin: auto;
     position: relative;
+    margin-top:10rem;
 }
 }
 @media only screen and (max-width: 600px) {
@@ -145,7 +146,7 @@ background: #E75448;
 }
 @media only screen and (max-width: 600px) {
 .terminal-window header .button.text {
-    margin-left:100px;
+    margin-left:45px;
     font-size:20px;
     margin-top:.5rem;
     }
