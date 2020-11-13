@@ -143,6 +143,13 @@ background: #E75448;
     border-radius: 0 0 .5rem .5rem;
 }
 }
+@media only screen and (max-width: 600px) {
+.terminal-window header .button.text {
+    margin-left:100px;
+    font-size:20px;
+    margin-top:.5rem;
+    }
+}
 .terminal-window section.terminal .typed-cursor {
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
