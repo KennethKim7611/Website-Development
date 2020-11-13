@@ -84,33 +84,32 @@ border-radius: 0 0 .5rem .5rem;
 .terminal-window .green { color: green;}
 
 
-/*Media for mobile responsive viewing
+/*Media for mobile responsive viewing*/
 @media only screen and (max-width: 600px) {
 .terminal-window {
 text-align: left;
-width: 37.5vmin;
-height: 22.5vmin;
-border-radius: .625vmin;
-margin: auto;
-position: relative;
-top: 70vmin;
+    width: 20rem;
+    height: 20rem;
+    border-radius: .625rem;
+    margin: auto;
+    position: relative;
 }
 }
 @media only screen and (max-width: 600px) {
 .terminal-window header {
 background: #E0E8F0;
-height: 1.875vmin;
-border-radius: .5vmin .5vmin 0 0;
-padding-left: 1vmin;
+height: 1.875rem;
+border-radius: .5rem .5rem 0 0;
+padding-left: .625rem;
 }
 }
 @media only screen and (max-width: 600px) {
 .terminal-window header .button {
-width: .75vmin;
-height: .75vmin;
-margin: .625vmin .25vmin 0 0;
-display: inline-block;
-border-radius: .5vmin;
+    width: .75rem;
+    height: .75rem;
+    margin: .625rem .25rem 0 0;
+    display: inline-block;
+    border-radius: .5rem;
 }
 }
 @media only screen and (max-width: 600px) {
@@ -130,18 +129,19 @@ background: #E75448;
 }
 @media only screen and (max-width: 600px) {
 .terminal-window section.terminal {
-color: white;
-font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
-font-size: .6875vmin;
-background: #30353A;
-padding: .625vmin;
-box-sizing: border-box;
-position: absolute;
-width: 100%;
-top: 1.875vmin;
-bottom: 0;
-overflow: auto;
-}*/
+    color: white;
+    font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+    font-size: 20pt;
+    background: #30353A;
+    padding: .625rem;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    top: 1.875rem;
+    bottom: 0;
+    overflow: auto;
+    border-radius: 0 0 .5rem .5rem;
+}
 }
 .terminal-window section.terminal .typed-cursor {
     opacity: 1;
