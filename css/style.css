@@ -5,7 +5,8 @@ html{
 body {
 	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
-	animation: gradient 5s ease infinite;
+    animation: gradient 5s ease infinite;
+    overflow:hidden;
 }
 @keyframes gradient {
 	0% {
@@ -32,10 +33,13 @@ body {
 }
 .btn_english{
     margin-right:10vw;
-    border:solid 2px white; 
+    border:solid 5px white; 
+    border-radius: 25px;
+    
 }
 .btn_korean{
-    border:solid 2px white; 
+    border:solid 5px white; 
+    border-radius: 25px;
 }
 a{
     text-decoration: none;
