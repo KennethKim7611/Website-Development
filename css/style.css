@@ -28,7 +28,7 @@ body {
     .container{
         display:flex;
         flex-direction: column;
-        padding-top: 3vw;
+        padding-top: 0vw;
     }
 }
 .btn_language{
