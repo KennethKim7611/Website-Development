@@ -61,7 +61,7 @@ class ScrollEvents {
 
     backgroundOffset = Math.round(Math.min(maxPixels, Math.max(0, backgroundOffset)));
 
-    el.css(`background-position`, `right 0px top ${backgroundOffset}px`);
+    el.css(`background-position`, `top ${backgroundOffset}px`);
   }
 
   fadeAtTop(el) {
