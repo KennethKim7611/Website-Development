@@ -25,6 +25,9 @@ body {
     padding-top: 5vw;
 }
 @media only screen and (max-width: 600px) {
+    html{
+        -webkit-text-size-adjust: none;
+    }
     .container{
         display:flex;
         flex-direction: column;

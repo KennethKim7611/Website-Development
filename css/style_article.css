@@ -116,6 +116,9 @@ a {
 }
 
 @media (min-width: 668px) {
+  html{
+    -webkit-text-size-adjust: none;
+  }
   .promo-detail {
     width: 450px;
   }

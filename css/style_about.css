@@ -95,6 +95,9 @@ figure {
 }
 
 @media only screen and (max-width: 600px) {
+  html{
+    -webkit-text-size-adjust: none;
+  }
   .hero__title{
     font-size:12vw;
   }
