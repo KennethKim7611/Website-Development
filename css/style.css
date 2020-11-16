@@ -23,7 +23,13 @@ body {
     display:flex;
     flex-direction: column;
     padding-top: 5vw;
-    
+}
+@media only screen and (max-width: 600px) {
+    .container{
+        display:flex;
+        flex-direction: column;
+        padding-top: 3vw;
+    }
 }
 .btn_language{
     display:inline-block;
