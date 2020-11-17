@@ -58,6 +58,9 @@ figure {
   .go_home{
     display:none;
   }
+  figure{
+    filter:brightness(10%);
+  }
 }
 
 .hero__title, .hero_subtitle,.scroll_down, .go_home{
