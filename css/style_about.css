@@ -56,7 +56,7 @@ figure {
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
   .go_home{
-    z-index:100;
+    display:none;
   }
 }
 
