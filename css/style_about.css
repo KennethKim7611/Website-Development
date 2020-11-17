@@ -54,12 +54,7 @@ figure {
     clip: unset;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  }
-  .go_home{
-    display:none;
-  }
-  figure{
-    filter:brightness(10%);
+    -webkit-text-size-adjust:none;
   }
 }
 
@@ -99,6 +94,12 @@ figure {
   width:90px;
   height:auto;
 }
+@supports (-webkit-overflow-scrolling: touch) {
+  .go_home{
+    z-index: 1000;
+  }
+}
+
 
 @media only screen and (max-width: 600px) {
   html{
