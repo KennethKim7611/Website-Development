@@ -288,3 +288,8 @@ figure {
 .contact_links{
   text-align: center;
 }
+
+.Project1{
+  display:flex;
+  flex-direction: row;
+}
