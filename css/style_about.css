@@ -294,7 +294,7 @@ figure {
   flex-direction: row;
 }
 .Project1_1, .Project1_2, .Project1_3, .Project1_4{
-  width:5vw;
+  width:20px;
   height:auto;
-  margin-right:1vw;
+  margin-right:10px;
 }
