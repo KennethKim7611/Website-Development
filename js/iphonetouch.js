@@ -7,7 +7,7 @@ $(function () {
 
         $('a').on('click touchend', function() { 
             var link = $(this).attr('href');   
-            window.open(link,'_blank'); // opens in new window as requested
+            window.open(link);
 
             return false; // prevent anchor click    
         });     
