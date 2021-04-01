@@ -49,6 +49,7 @@ figure {
   height: 100%;
   clip: rect(0, auto, auto, 0);
 }
+/*
 @supports (-webkit-overflow-scrolling: touch) {
   .hero-inner {
     clip: initial;
@@ -56,7 +57,7 @@ figure {
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     -webkit-text-size-adjust:none;
   }
-}
+}*/
 
 
 .hero__title, .hero_subtitle,.scroll_down, .go_home{
