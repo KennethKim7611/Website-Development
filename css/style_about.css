@@ -50,15 +50,6 @@ figure {
   clip: rect(0, auto, auto, 0);
 }
 
-@supports (-webkit-overflow-scrolling: touch) {
-  .hero-inner {
-    clip: initial;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    -webkit-text-size-adjust:none;
-  }
-}
-
 
 .hero__title, .hero_subtitle,.scroll_down, .go_home{
   display: -webkit-box;
@@ -159,6 +150,8 @@ figure {
 .l1{
   margin-bottom:40px;
 }
+
+/*iphone*/
 @media only screen and (max-width: 600px) {
   .About{
     height:100vh;
@@ -253,6 +246,7 @@ figure {
   letter-spacing: -0.125rem;
   text-align: center;
 }
+
 @media (min-width: 600px) {
   .content__title {
     font-size: 4rem;
@@ -298,4 +292,16 @@ figure {
   width:15vw;
   height:auto;
   margin-right:10px;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .hero-inner {
+    clip: initial;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    -webkit-text-size-adjust:none;
+  }
+  .hero_title{
+    font-size:100px
+  }
 }
