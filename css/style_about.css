@@ -305,6 +305,7 @@ figure {
     -webkit-text-size-adjust:none;
   }
   .hero_title{
-    font-size:100px
+    font-size:100px;
+    color:black
   }
 }
