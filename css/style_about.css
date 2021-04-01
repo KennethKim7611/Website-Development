@@ -153,6 +153,9 @@ figure {
 
 /*iphone*/
 @media only screen and (max-width: 600px) {
+  .go_home{
+    display:none
+  }
   .About{
     height:100vh;
     width:100vw;
