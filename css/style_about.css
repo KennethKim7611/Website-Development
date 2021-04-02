@@ -4,7 +4,6 @@
 }
 html{
   overflow-x: hidden;
-  background-color:#9c9a95;
 }
 p {
   font-family: "Roboto", sans-serif;
@@ -151,23 +150,11 @@ figure {
 .l1{
   margin-bottom:40px;
 }
-.go_back{
-  display:none
-}
 /*iphone*/
 @media only screen and (max-width: 600px) {
   .go_home{
     display:none
   }
-  .go_back{
-    display:initial;
-    width:9vw;
-    margin-top:2vw;
-    margin-left:2vw;
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-  }
-
   .About{
     height:100vh;
     width:100vw;
