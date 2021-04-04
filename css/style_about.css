@@ -294,12 +294,13 @@ figure {
   height:auto;
   margin-right:10px;
 }
-/*
+
 
 @supports (-webkit-overflow-scrolling: touch) {
+  /*
   html{
     -webkit-text-size-adjust: none;
-  }
+  }*/
   .hero-inner {
     clip: initial;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
