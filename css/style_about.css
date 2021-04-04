@@ -302,11 +302,10 @@ figure {
     -webkit-text-size-adjust: none;
   }
   .hero-inner {
-    
     clip: initial;
-    /*
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    /*
     -webkit-text-size-adjust:none;
     */
   }
