@@ -304,12 +304,13 @@ figure {
   
   .hero-inner {
     clip: initial;
+    /*
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            */
+    -webkit-clip-path: rect(0, auto, auto, 0);
+            clip-path: rect(0, auto, auto, 0);
     -webkit-text-size-adjust:none;
-  }
-  .go_home{
-    z-index:100;
   }
   
 }
