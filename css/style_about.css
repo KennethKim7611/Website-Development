@@ -80,7 +80,7 @@ figure {
   margin-top:20vw;
 }
 .go_home{
-  display:initial
+  display:initial;
   -webkit-filter: invert(100%);
   filter: invert(100%);
   top:10px;
@@ -294,6 +294,7 @@ figure {
   height:auto;
   margin-right:10px;
 }
+/*
 
 @supports (-webkit-overflow-scrolling: touch) {
   html{
