@@ -80,6 +80,7 @@ figure {
   margin-top:20vw;
 }
 .go_home{
+  display:initial
   -webkit-filter: invert(100%);
   filter: invert(100%);
   top:10px;
@@ -150,6 +151,7 @@ figure {
 .l1{
   margin-bottom:40px;
 }
+
 /*iphone*/
 @media only screen and (max-width: 600px) {
   .About{
@@ -299,9 +301,5 @@ figure {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     -webkit-text-size-adjust:none;
-  }
-  .hero_title{
-    font-size:100px;
-    color:black
   }
 }
