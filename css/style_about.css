@@ -52,7 +52,7 @@ figure {
 }
 
 
-.hero__title, .hero_subtitle,.scroll_down, .go_home{
+.hero__title, .hero_subtitle,.hero_subsubtitle, .scroll_down, .go_home{
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
@@ -75,6 +75,10 @@ figure {
   font-size:4vw;
   margin-top:7vw;
 
+}
+.hero_subsubtitle{
+  margin-top:10vw;
+  font-size:2vw;
 }
 .scroll_down{
   font-size:7vw;
@@ -101,6 +105,10 @@ figure {
   .hero_subtitle{
     font-size:6vw;
     margin-top:13vw;
+  }
+  .hero_subsubtitle{
+    font-size:4vw;
+    margin-top:20vw;
   }
   .scroll_down{
     font-size:10vw;
