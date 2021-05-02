@@ -52,7 +52,7 @@ figure {
 }
 
 
-.hero__title, .hero_subtitle,.hero_subsubtitle, .scroll_down, .go_home{
+.hero__title, .hero_subtitle,.hero_subsubtitle, .scroll_down/*, .go_home*/{
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
@@ -84,6 +84,7 @@ figure {
   font-size:7vw;
   margin-top:20vw;
 }
+/*
 .go_home{
   display:initial;
   -webkit-filter: invert(100%);
@@ -93,7 +94,15 @@ figure {
   width:90px;
   height:auto;
 }
-
+*/
+.go_home{position: fixed; top: 10px; left: 5px; z-index: 2;}
+.go_home img{
+  display:initial;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  width: 90px; 
+  height: auto;
+}
 
 @media only screen and (max-width: 600px) {
   html{
