@@ -178,6 +178,9 @@ figure {
     display:flex;
     flex-direction: column;
   }
+  .go_home img{ 
+    width:50px;
+  }
   .about_left,.about_right{
     display:flex;
     flex-direction: column;
