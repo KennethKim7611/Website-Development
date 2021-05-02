@@ -31,16 +31,20 @@ figure {
 }
 .hero:nth-child(1) figure {
   background-image: url("https://www.unilodgers.com/blog/wp-content/uploads/2019/09/shutterstock_221247619.jpg");
+  background-position: top center;
 }
 .hero:nth-child(2) figure {
   background-image: url("https://wallpapercave.com/wp/wp2114109.jpg");
+  background-position: top center;
   filter:brightness(50%);
 }
 .hero:nth-child(3) figure {
   background-image: url("https://i.ibb.co/yByw9Yf/wallpaperflare-cropped.jpg");
+  background-position: top center;
 }
 .hero:nth-child(4) figure {
   background-image: url("https://cdn.wallpapersafari.com/95/37/vD0sfu.jpg");
+  background-position: top center;
 }
 
 .hero-inner {
