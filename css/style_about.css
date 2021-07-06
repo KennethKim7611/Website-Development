@@ -41,6 +41,7 @@ figure {
 .hero:nth-child(3) figure {
   background-image: url("https://i.ibb.co/yByw9Yf/wallpaperflare-cropped.jpg");
   background-position: top center;
+  filter:brightness(50%);
 }
 .hero:nth-child(4) figure {
   background-image: url("https://i.ibb.co/JQLwP7D/Kakao-Talk-20210627-080802501.jpg");
@@ -192,6 +193,41 @@ figure {
   display:inline-block;
 }
 
+.project1{
+  height:100vh;
+  width:100vw;
+  display:flex;
+  flex-direction: column;
+  text-align:left;
+}
+.project1_title{
+  font-size:50px;
+  margin-top:5vw;
+  margin-left:10vw;
+}
+.project1_sub{
+  font-size:25px;
+  margin-top:10px;
+  margin-left:11vw;
+}
+.project1_imgs{
+  flex-direction: row;
+  text-align: center;
+  margin-top: 20px;
+}
+.project1_img1{
+  width:40%;
+  height:auto;
+}
+.project1_img2{
+  width:40%;
+  height:auto;
+}
+.project1_mobile_title{
+  display:none;
+}
+
+
 
 /*iphone*/
 @media only screen and (max-width: 600px) {
@@ -250,6 +286,21 @@ figure {
   }
   .l1{
     margin-bottom:40px;
+  }
+  .project1_img2{
+    display:none;
+  }
+  .project1_title{
+    display:none;
+  }
+  .project1_mobile_title{
+    display:initial;
+    margin-top:10vh;
+    margin-left:12vw;
+  }
+  .project1_img1{
+    width:80vw;
+    height:auto;
   }
 }
 
@@ -328,20 +379,6 @@ figure {
 .contact_links{
   text-align: center;
 }
-
-.project1{
-  height:100vh;
-  width:100vw;
-  display:flex;
-  flex-direction: column;
-  text-align:left;
-}
-.project1_title{
-  font-size:50px;
-  margin-top:5vw;
-  margin-left:10vw;
-}
-
 
 
 @supports (-webkit-overflow-scrolling: touch) {
