@@ -26,7 +26,7 @@ figure {
 .hero {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 110vh;
   
 }
 .hero:nth-child(1) figure {
@@ -43,7 +43,7 @@ figure {
   background-position: top center;
 }
 .hero:nth-child(4) figure {
-  background-image: url("https://cdn.wallpapersafari.com/95/37/vD0sfu.jpg");
+  background-image: url("https://i.ibb.co/JQLwP7D/Kakao-Talk-20210627-080802501.jpg");
   background-position: top center;
 }
 
@@ -256,7 +256,7 @@ figure {
 
 .content {
   position: relative;
-  margin: 0 auto 8rem;
+  /*margin: 0 auto 8rem;*/
   padding: 2rem;
 }
 .content:before {
@@ -266,7 +266,7 @@ figure {
   top: -100px;
   left: 0;
   width: 100%;
-  height: 100px;
+  height: 101px;
   background-color: white;
   z-index: 99;
   -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
