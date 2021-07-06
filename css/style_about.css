@@ -192,6 +192,7 @@ figure {
   display:inline-block;
 }
 
+
 /*iphone*/
 @media only screen and (max-width: 600px) {
   .About{
@@ -328,15 +329,19 @@ figure {
   text-align: center;
 }
 
-.Project1{
+.project1{
+  height:100vh;
+  width:100vw;
   display:flex;
-  flex-direction: row;
+  flex-direction: column;
+  text-align:left;
 }
-.Project1_1, .Project1_2, .Project1_3, .Project1_4{
-  width:15vw;
-  height:auto;
-  margin-right:10px;
+.project1_title{
+  font-size:50px;
+  margin-top:5vw;
+  margin-left:10vw;
 }
+
 
 
 @supports (-webkit-overflow-scrolling: touch) {
