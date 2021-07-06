@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <style>
+        html{
+            background-color: white;
+        }
+        .arrow{
+            -moz-transform: scale(-1, 1);
+            -webkit-transform: scale(-1, 1);
+            -o-transform: scale(-1, 1);
+            -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+            position:absolute;
+            top:0;
+            left:10px;
+            font-size:80px;
+        }
+        .arrow a{
+            text-decoration: none;
+            color:black;
+        }
+        .content{
+            text-align:center;
+            width:70vw;
+            margin:0 auto;
+            display:flex;
+            flex-direction: column;
+            color:black;
+        }
+        .line{
+            display:block;
+            width:80vw;
+            margin-bottom:30px;
+        }
+        .title{
+            font-size:40px;
+            font-family: 'Roboto Slab', serif;
+            border-bottom:3px solid black;
+        }
+        .date_and_name{
+            font-family: 'Roboto Slab', serif;
+        }
+        p{
+            font-family: 'Lora', serif;
+            text-align:left;
+            font-size:20px;
+        }
+        .img2{
+            height:300px;
+            width:auto;
+        }
+        .img3{
+            height:700px;
+            width:auto;
+        }
+
+        .img4{
+            height:300px;
+            width:auto;
+        }
+        @media only screen and (max-width: 600px) {
+            .arrow{
+                display:none;
+            }
+            .content{
+                width:90vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <article class="content">
+        <div class="arrow">
+            <a href="./English.html">&#10140;</a>
+        </div>
+        <div class="title">
+            Molecular Dynamic Study of electrode-electrolyte surface
+        </div>
+        <div class="date_and_name">
+            07/06/2021  By Kenneth Kim
+        </div>
+        <div class="line"></div>
+        <section class="text">
+            <p>
+                Modern Lithium-Ion Batteries(LIB) contain organic solvents(carbonates, ethers, etc) and salt anions(PF6-, BF4-, ClO4-, etc) which are not electrochemically stable and will undergo decomposition reaction to form a passivating layer, referred to as the Solid Electrolyte Interface(SEI). It is at this interface where the crucial electrochemical reaction, which governs the whole battery performance, occurs. Thus Dr. Hwang et al conducted a molecular level analysis observing thermodynamics, transport phenomena, and electrochemical reactions in an effort to better understand battery technology. 
+            </p>
+            <br>
+            <p>
+                <b>Method</b>
+            </p>
+            <img class="img1" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fcs8Xke%2Fbtq8VFOpRai%2F2ExbUIVLlEApKHw7E72Uek%2Fimg.png">
+            <div class="img1_sub">
+                Fig.1 Simulation cell
+            </div>
+            <p> Molecular Dynamic simulations with the OPLS-AA force field using the GROMACS simulation package were performed. The rectangular simulation cell contains liquid electrolyte (1M LiPF6 in EC: DMC 1:1 molar ratio). 
+            </p>
+            <br>
+            <p>
+                <b>Results and Analysis</b>
+            </p>
+            <P>
+                1) Electrolyte distribution
+            </p>
+            <img class="img2"src ="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FEuyY2%2Fbtq8Z0RkiJO%2FhUx6jcqEvqbw7wYOztjOD1%2Fimg.png">
+            <div class="img2_sub">
+                Fig.2 Electrolyte distribution near uncharged electrodes
+            </div>
+            <p>
+                The figure above reflects the data drawn from the simulation. the x-axis refers to the nm distance from the electrode with going right means further away from the electrode. y-axis refers to the degree of concentration, a higher y value indicates more of the variable. For the uncharged electrode(neutral state), it was observed that EC(cyclic ethylene carbonate) and DMC(linear dimethyl carbonate) are packed more densely at the interface by approximately 2,3 times higher than their bulk values respectively. This can be explained by the van der Waals force overcoming the bulk density. Another point that was observed was the Lithium-ion peak which is indicated with the blue area. Circle in the middle, where relative Lithium-ion concentration is high shows accordance with the minimum EC and DMC density. This is because the more lithium-ion is present, it is difficult for the densely packed carbonate complexes to rearrange and solvate lithium ions. 
+            </p>  
+            <br>
+            <img class="img3" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbMEaDD%2Fbtq8UOdNgax%2Fqx6i6Wdx0zLiJVhUTzN2ok%2Fimg.png">
+            <div class="img3_sub">
+                Fig.3 Electrolyte distribution near charged electrodes
+            </div>
+            <p>
+                In the case of the charged electrode (b), the electric field causes rearrangement of EC and DMC. As a result, EC was observed to have a concentration that is 4 times the uncharged electrode due to smaller van der Waals volume. EC and DMC together are packed near the charged electrode and creates a shielding effect which functions as a separator, blocking lithium-ion from penetrating the electrode. Also, since the electrode is charged, lithium-ion concentration near the electrode is observed to be 10 times the uncharged electrode. The difference between figure (b) and (c) is the magnitude of charge(b = -11.6µC cm^-2; c = -16.4µC cm^-2). The result of c), tells that the shielding effect created by EC and DMC is too weak to compete with the attractive force between lithium-ion and charged electrode, and thus the noticeable amount of lithium-ion is leaked as a result.
+            </p>
+            <br>
+            <br>
+            <img class="img4" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fvr93C%2Fbtq8UPDLxh8%2FUvDUc5ZsVZS0mpiUZ8brVk%2Fimg.png">
+            <div class="img4_sub">
+                Fig.4 Illustration of the orientation of EC, DMC, and lithium-ion near a) moderate b) highly charged electrode. Pentagon ->EC, Chevron ->DMC, Circle ->Lithium ion Black Circle ->PF6
+            </div>
+            <p>
+                Fig.4 a) can be connected with Fig3. b) and Fig.4 b) with Fig.3 c). In a), EC and DMC are oriented in such a way that effectively blocks the lithium-ion from touching the electrode which will result in decomposition reaction and damage the performance of the battery. In the case of the latter illustration, the attraction force was stronger than the shielding effect created by EC and DMC's orientation and thus lithium-ion is touching the charged electrode which is critical to battery health. 
+            </p>
+            <br>
+            <img class ="img5" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FtZuTo%2Fbtq8ZqQzqJB%2F7dd9K0BFFLIuXJUB0sUgY0%2Fimg.png">
+            <div class = "img5_sub">
+                Fig.5 Simulated visualization of cross section of electrode Black->EC Red->DMC Blue->Lithium ion
+            </div>
+            <p>
+                Figure 5 is basically 3d image of Fig.4. From uncharged to moderately charged, reorientation of EC and DMC is observed. From moderately charged to highly charged, lithium-ion penetration is observed.
+            </p>
+            <img class ="img6" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FqMW55%2Fbtq8ZqpvFz1%2FaVlkAB4kqENziWNTrTuu80%2Fimg.png">
+            <div class = "img6_sub">
+                Fig.6 Relationship between the concentration of DMC/EC and magnitude of the charge
+
+            </div>
+            <p>
+                Two things to note from the graph above. First, is the cross point of EC and DMC which is approximately at -6.8µC cm^-2. That specific point is where EC's smaller van der Waals volume allows for more packing near electrode compared to DMC(as the magnitude of the charge is increased). Second, the beginning point of lithium-ion penetration is approximately at -12µC cm^-2. At this charge, EC and DMC's shielding effect is outpowered by the attraction force between the lithium-ion and the charged electrode.
+            </p>
+            <br>
+            <p>
+                2) Effect of interfacial structure of Li+ ion transport
+            </p>
+            <img class ="img7" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb3e5Wl%2Fbtq8U2W5NPH%2FEDCtUzU4b9MjxXPNk8rbk0%2Fimg.png">
+            <div class = "img7_sub">
+                Fig.7 Relative free energy(left axis) and the lithium-ion coordination number(right axis) along the z-direction near graphite electrode - Uncharged Electrode
+            </div>
+            <p>
+                It is worth looking at Figure 7 with Figure 2 because they are related. The relative maximum and the relative minimum indicated with the blue lines correlate with the relative maximum/minimum of lithium-ion concentration in figure 2. This is due to the energy penalty associated with the rearrangement of solvent molecules and partial dissociation of lithium-ion. For the coordination number in red, since it remains nearly unchanged for the region z=2.5nm to 1nm, it can be inferred that lithium-ion remain fully solvated while diffusing through the electrolyte and also suggest that part of the primary solvation sheath would move along with the lithium-ion rather than lithium-ion just moving via ratchet mechanism(if lithium-ion is transported via ratchet mechanism it would show oscillations in the coordination number).
+            </p>
+            <img class ="img8" src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FoJGC8%2Fbtq8UQbJrfM%2FT2uYOoa1NLYDAkCh3u1HsK%2Fimg.png">
+            <div class = "img8_sub">
+                Fig.8 Comparing variation of Fig.7 with Fig.3. Both a) uncharged b) moderately c) highly charged electrode
+            </div>
+            <p>
+                Again for the charged cases, the relative maximum/minimum of free energy correlates with the relative maximum/minimum of lithium-ion concentration and minimum/maximum concentration of EC and DMC. Another takeaway from this figure is that the fluctuation of free energy in charged electrodes corresponds to the change in spatial distribution shown in figure 5. 
+            </p>
+            <br>
+            <p>
+                <b>Conclusion</b>
+                <br>
+                With the observed behaviors of the electrode-electrolyte surface, this study suggests further investigations. The extended research effort will allow the engineering of more developed lithium-ion batteries that will alter impact lives of billions.
+            </p>
+            <p>
+                <b>Reference</b>
+                <br>
+                Boyer, Mathew J, L. Vilčiauskas and G. Hwang. “Structure and Li+ ion transport in a mixed carbonate/LiPF6 electrolyte near graphite electrode surfaces: a molecular dynamics study.” Physical chemistry chemical physics : PCCP 18 40 (2016): 27868-27876 .
+            </p>
+            <div class="line"></div>
+        </section>
+    </article>
+</body>
+</html>
