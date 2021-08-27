@@ -30,21 +30,21 @@ figure {
   
 }
 .hero:nth-child(1) figure {
-  background-image: url("https://www.unilodgers.com/blog/wp-content/uploads/2019/09/shutterstock_221247619.jpg");
+  background-image: url("https://i.ibb.co/C1ds6q4/shutterstock-221247619-1.jpg");
   background-position: top center;
 }
 .hero:nth-child(2) figure {
-  background-image: url("https://wallpapercave.com/wp/wp2114109.jpg");
+  background-image: url("https://i.ibb.co/82b55yP/wp2114109.jpg");
   background-position: top center;
   filter:brightness(50%);
 }
 .hero:nth-child(3) figure {
-  background-image: url("https://i.ibb.co/yByw9Yf/wallpaperflare-cropped.jpg");
+  background-image: url("https://i.ibb.co/s6LGxWS/wallpaperflare-cropped.jpg");
   background-position: top center;
   filter:brightness(50%);
 }
 .hero:nth-child(4) figure {
-  background-image: url("https://i.ibb.co/JQLwP7D/Kakao-Talk-20210627-080802501.jpg");
+  background-image: url("https://i.ibb.co/g4VcSQp/Kakao-Talk-20210627-080802501.jpg");
   background-position: top center;
 }
 
@@ -316,7 +316,7 @@ figure {
   position: absolute;
   top: -100px;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 101px;
   background-color: white;
   z-index: 99;
