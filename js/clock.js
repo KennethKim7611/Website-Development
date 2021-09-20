@@ -11,16 +11,16 @@ function getGreeting() {
     {
         text = "Good Morning";
     }
-    else if (11<=hour && hour<6)
+    else if (11<=hour && hour<18)
     {
         text = "Good Afternoon";
     }
-    else if (6<=hour && hour<10)
+    else if (18<=hour && hour<22)
     {
         text = "Good Night";
     }
     else {
-        text = "Have a sweet dream";
+        text = "Sweet dreams";
     }
     greeting.innerText = text;
 }
