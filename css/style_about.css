@@ -30,21 +30,21 @@ figure {
   
 }
 .hero:nth-child(1) figure {
-  background-image: url("https://i.ibb.co/C1ds6q4/shutterstock-221247619-1.jpg");
+  background-image: url("https://i.ibb.co/WpRCBjv/wp2114109.jpg");
   background-position: top center;
 }
 .hero:nth-child(2) figure {
-  background-image: url("https://i.ibb.co/82b55yP/wp2114109.jpg");
+  background-image: url("https://i.ibb.co/sy7KqzM/shutterstock-221247619-1.jpg");
   background-position: top center;
   filter:brightness(50%);
 }
 .hero:nth-child(3) figure {
-  background-image: url("https://i.ibb.co/s6LGxWS/wallpaperflare-cropped.jpg");
+  background-image: url("https://i.ibb.co/dJpb3hS/wallpaperflare-cropped.jpg");
   background-position: top center;
   filter:brightness(50%);
 }
 .hero:nth-child(4) figure {
-  background-image: url("https://i.ibb.co/g4VcSQp/Kakao-Talk-20210627-080802501.jpg");
+  background-image: url("https://i.ibb.co/1mXWrXy/Kakao-Talk-20210627-080802501.jpg");
   background-position: top center;
 }
 
