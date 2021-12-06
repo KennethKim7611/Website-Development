@@ -3,9 +3,6 @@ const images = document.querySelectorAll('.js-lazyload-image');
 
 const sections = document.querySelectorAll('.section');
 
-window.onbeforeunload = function () {
-  window.scrollTo(0,0);
-};
 
 let config = {
   rootMargin: '0px',
