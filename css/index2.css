@@ -268,6 +268,7 @@ main {
   /*margin: 0 auto 8rem;*/
   padding-bottom: 0%;
 }
+
 /*
 .content:before {
   content: '';
@@ -356,4 +357,7 @@ main {
 }
 .github{
   display:inline-block;
+}
+.section section--elevated{
+  padding-bottom: 0%;
 }

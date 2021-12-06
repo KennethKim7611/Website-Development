@@ -8,7 +8,7 @@
     align-items: center;
     min-height: 100vh;
     margin: 0;
-    background-color: #1E0555;
+    background-color: rgb(158, 199, 253);
   }
   
   body, .quote-input {
@@ -16,22 +16,23 @@
   }
   
   .container {
-    background-color: #F0DB4F;
+    background-color: #fff;
     padding: 1rem;
     border-radius: .5rem;
-    width: 700px;
+    width: 1000px;
     max-width: 90%;
   }
   
   .timer {
     position: absolute;
     top: 2rem;
-    font-size: 3rem;
-    color: #F0DB4F;
+    font-size: 5rem;
+    color: #fff;
     font-weight: bold;
   }
   
   .quote-display {
+    font-size: 2rem;
     margin-bottom: 1rem;
     margin-left: calc(1rem + 2px);
     margin-right: calc(1rem + 2px);
@@ -46,7 +47,7 @@
     margin: auto;
     resize: none;
     padding: .5rem 1rem;
-    font-size: 1rem;
+    font-size: 2rem;
     border-radius: .5rem;
   }
   
