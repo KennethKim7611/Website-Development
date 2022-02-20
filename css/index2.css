@@ -176,11 +176,7 @@ main {
   cursor: help;
 }
 .header--fancy:hover {
-  text-decoration: underline;
-  -webkit-text-decoration-style: dashed;
-          text-decoration-style: dashed;
-  -webkit-text-decoration-color: var(--accentSecondary);
-          text-decoration-color: var(--accentSecondary);
+  text-decoration: none;
 }
 
 .section {
