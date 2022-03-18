@@ -28,10 +28,10 @@ function getGreeting() {
 function getClock() {
     const date = new Date();
     hour.innerText = `${date.getHours()}`;
-    minute.innerText = `${String(date.getMinutes()).padStart(2,"0")}`;
+    minute.innerText = `${String(date.getMinutes()).padStart(2,"0")}`; // 2 characters long of 0
     second.innerText = `${date.getSeconds()}`;
 }
 
 getClock();
 getGreeting();
-setInterval(getClock, 1000);
+setInterval(getClock, 1000); // Refresh every 1000ms

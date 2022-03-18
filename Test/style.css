@@ -1,0 +1,43 @@
+.flex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.scene {
+  background-color: #d1d8e0;
+  height: 100vh;
+}
+
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.button:focus {
+  outline: none;
+}
+.button__text {
+  background: #3867d6;
+  color: #fff;
+  padding: 1em 3em;
+  border-radius: 3em;
+  font: 600 1rem/1 "Lato", sans-serif;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.075em;
+  border: 3px solid transparent;
+  text-transform: uppercase;
+}
+.confetti {
+  position: relative;
+}
+.confetti__image {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

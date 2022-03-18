@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="unitconverter.css">
+    <title>Unit Converter</title>
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+
+    function TimeConvert() {
+      const [amount, setAmount] = React.useState();
+      const [flipped, setFlipped] = React.useState(false);
+      const onChange = (event) => {
+          setAmount(event.target.value);
+      };
+      const reset = () => setAmount(0);
+      const onFlip =() => {
+          //reset();
+          setFlipped((current) => !current);
+      }
+      return (
+        <div class = "container">
+          <div class= "element m_h">
+            <label htmlfor="minutes">Minutes</label>
+            <input value ={flipped ? amount*60:amount} id = "minutes" placeholder="Minutes" type ="number" onChange={onChange} disabled={flipped} />
+            <br></br><div class ="tab">to</div>
+            <label htmlfor="hours">Hours</label>
+            <input value = {flipped ? amount: (amount /60)} id = "hours" placeholder="Hours" type ="number" onChange={onChange} disabled={!flipped}/>
+            <div class="ln"></div>
+            <button onClick={reset}>Reset</button>
+            <button onClick={onFlip}>Flip</button>
+          </div>
+        </div>
+      );
+    }
+    function DistanceConvert() {
+      const [amount, setAmount] = React.useState();
+      const [flipped, setFlipped] = React.useState(false);
+      const onChange = (event) => {
+          setAmount(event.target.value);
+      };
+      const reset = () => setAmount(0);
+      const onFlip =() => {
+          //reset();
+          setFlipped((current) => !current);
+      }
+      return (
+        <div class ="container">
+          <div class ="element km_m">
+            <label htmlfor="km">KM</label>
+            <input value ={flipped ? amount/0.621371:amount} id = "km" placeholder="Kilmeters" type ="number" onChange={onChange} disabled={flipped} />
+            <br></br><div class ="tab">to</div>
+            <label htmlfor="miles">Miles</label>
+            <input value = {flipped ? amount: (amount*0.621371)} id = "miles" placeholder="Miles" type ="number" onChange={onChange} disabled={!flipped}/>
+            <div class="ln"></div>
+            <button onClick={reset}>Reset</button>
+            <button onClick={onFlip}>Flip</button>
+          </div>
+        </div>
+      );
+    }
+    function App() {
+        const [index, setIndex] = React.useState("xx");
+        const onSelect = (event) => {
+            setIndex(event.target.value);
+        };
+        return (
+        <div>
+            <h1>Unit Converter for poor ChemEs</h1>
+            <select value={index} onChange={onSelect}>
+                <option value="xx">Select Conversion</option>
+                <option value ="0">Weight</option>
+                <option value ="1">Distance</option>
+                <option value ="2">Pressure</option>
+                <option value ="3">Temperature</option>
+                <option value ="4">Area</option>
+                <option value ="5">Volume</option>
+                <option value ="6">Time</option>
+            </select>
+            {index === "xx" ? "Please select your units" : null}
+            {index === "0" ? <WeightConvert/>: null}
+            {index === "1" ? <DistanceConvert/> : null}
+            {index === "2" ? <PressureConvert/> : null}
+            {index === "3" ? <TemperatureConvert/> : null}
+            {index === "4" ? <AreaConvert/> : null}
+            {index === "5" ? <VolumeConvert/> : null}
+            {index === "6" ? <TimeConvert/> : null}
+        </div>
+        );
+    }
+    const root = document.getElementById("root");
+        ReactDOM.render(<App />, root);
+  </script>
+</html>

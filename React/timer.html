@@ -1,0 +1,48 @@
+<html>
+<head>
+  	<title>Bootstrap</title>
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" type="text/css" href="setest_style.css">
+  	<link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ 	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      var sec = 0;
+      function pad ( val ) { return val > 9 ? val : "0" + val; }
+var func;
+  
+
+    function timerstart(){
+func = setInterval( function(){
+              $("#seconds").html(pad(++sec%60));
+              $("#minutes").html(pad(parseInt(sec/60,10)));
+          }, 1000);
+}
+timerstart();
+
+          function myStopFunction() {
+                  clearInterval(func);
+          }
+function myClearFunction(){
+myStopFunction();
+$("#seconds").html(pad(00));
+              $("#minutes").html(pad(00));
+sec = 0;
+}
+    </script>
+</head>
+<body>  
+ <div class="quiz-time">
+        <div class="timer">
+            <span id="minutes">00</span>:<span id="seconds">00</span>
+        </div>
+    
+
+    <button href="#" id="show-explanation" class="button1" onclick="myStopFunction()">Stop</button>
+ <button href="#" id="show-explanation" class="button1" onclick="timerstart()">Start Again</button>
+<button href="#" id="show-explanation" class="button1" onclick="myClearFunction();">Clear</button>
+    </div>
+</body>
+
+</html>
