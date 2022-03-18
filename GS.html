@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Goodmorning Squat!
+        </title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+            html{
+                font-family: 'Bebas Neue', cursive;
+                color:black;
+                font-size: 8vh;
+            }
+            .container{
+                margin-top:3vh;
+                align-items: center;
+                display:flex;
+                flex-direction:column;
+            }
+            img{
+                margin-top:5vh;
+            }
+            .credit{
+                text-align: center;
+                position: absolute;
+                bottom: 0px;
+                font-size: 3vh;
+            }
+            .row{
+                display:flex;
+                display:row;
+            }
+            .sets{
+                margin-top:5vh;
+                font-size:2vh;
+            }
+            .sec{
+                margin-top:5vh;
+                font-size:2vh;
+            }
+            .note{
+                text-align: left;
+                font-size:3vh;
+            }
+            a:hover{
+                text-decoration: none; 
+            }
+            a:visited{
+                text-decoration: none;
+            }
+            a{
+                text-decoration: none;
+                color:blueviolet;
+            }
+            .note_2{
+                font-family: 'Open Sans', sans-serif;
+                margin-left:2vh;
+                font-size:1.5vh;
+                font-style:bold;
+            }
+            button{
+            font-size:5vh;
+            margin-bottom: 2vh;
+            appearance: none;
+            background-color: green;
+            border: 2px solid #1A1A1A;
+            border-radius: 15px;
+            box-sizing: border-box;
+            color: #FFFFFF;
+            cursor: pointer;
+            display: inline-block;
+            font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+            font-weight: 600;
+            line-height: normal;
+            min-height: 60px;
+            outline: none;
+            padding: 16px 24px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+            }
+            button:disabled{
+                background-color:black;
+            }
+            #Title{
+                font-size:6.5vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div id="Title">Goodmorning Squat</div>
+            <img src="https://i.ibb.co/Kb3cxFy/clipart6668.png" width="30%">
+            <div class="row">
+                <div id="set_counter">0</div><div class="sets">&nbsp;set</div>
+            </div>
+            <div class="row">
+                <div id="timer">0</div><div class="sec">&nbsp;sec</div>
+            </div>
+            <button onClick = pressed() id="complete_set">Set complete!</button>
+            <button onClick = reset() id="reset_b">Reset</button>
+            <!--
+            <div class="note">What is GVT Program?</div>
+            <div class="note_2">German Volume Training(GVT) refers to a workout routine that involves 10 sets of 10 repetitions of an exercise. 60% of performer's 1RM is relaxed for 4 seconds, then contracted for 1 second. Between each repetitions, 60 second of rest is allowed.</div>
+            -->
+            <div class="credit">Developed by <a href="https://kennethkim0406.com"><u>Kenneth Kim @ UT Austin &#129060; </u></a></div>
+        </div>
+    </body>
+    <script>
+        document.getElementById("reset_b").disabled = true
+        var initialize = false
+        const timerElement = document.getElementById('timer')
+        function startTimer() {
+            startTime = new Date()
+            timerElement.innerText = 0
+            initialize = true
+            var time = 0
+            document.getElementById("complete_set").disabled = true
+            alert_reset()
+            func = setInterval( function(){
+                timerElement.innerText = getTimerTime()
+                if(getTimerTime() == 90)
+                {
+                    document.getElementById("complete_set").disabled = false
+                    alert()
+                    clearInterval(func)
+                }
+            }, 1000) 
+        }
+        function getTimerTime() 
+        {
+            return Math.floor((new Date() - startTime) / 1000)
+        }
+        function myClearFunction()
+        {
+            clearInterval(func)
+            sec = 0
+        }
+        const counter = document.getElementById('set_counter')
+        var clicks = 0
+        function pressed() {
+            if(initialize)
+            {
+                myClearFunction(fcn)
+            }
+            startTimer()
+            initialize = false
+            clicks += 1
+            counter.innerText = clicks
+            if (clicks==5)
+            {
+                document.getElementById("complete_set").disabled = true
+                document.getElementById("reset_b").disabled = false
+                document.body.style.backgroundColor = "green"
+                clearInterval(func)
+            }  
+
+        }
+        function alert() 
+        {
+            document.body.style.backgroundColor = "tomato"
+        }
+        function alert_reset()
+        {
+            document.body.style.backgroundColor = "white"
+        }
+        function reset() {
+            document.getElementById("complete_set").disabled = false
+            document.getElementById("reset_b").disabled = true
+            timerElement.innerText = 0
+            clearInterval(func)
+            document.body.style.backgroundColor = "white"
+            clicks = 0
+            counter.innerText = clicks
+        }
+
+    </script>
+</html>
