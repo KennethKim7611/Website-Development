@@ -8,6 +8,7 @@
             @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
             html{
+                background-color:white;
                 font-family: 'Bebas Neue', cursive;
                 color:black;
                 font-size: 8vh;
@@ -17,6 +18,9 @@
                 align-items: center;
                 display:flex;
                 flex-direction:column;
+            }
+            img{
+                margin-top:5vh;
             }
             .credit{
                 text-align: center;
@@ -37,6 +41,7 @@
                 font-size:2vh;
             }
             .note{
+                text-align: left;
                 font-size:3vh;
             }
             a:hover{
@@ -59,7 +64,7 @@
             font-size:5vh;
             margin-bottom: 2vh;
             appearance: none;
-            background-color: #000000;
+            background-color: green;
             border: 2px solid #1A1A1A;
             border-radius: 15px;
             box-sizing: border-box;
@@ -76,6 +81,9 @@
             text-decoration: none;
             transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
             }
+            button:disabled{
+                background-color:black;
+            }
         </style>
     </head>
     <body>
@@ -90,10 +98,12 @@
             </div>
             <button onClick = pressed() id="complete_set">Set complete!</button>
             <button onClick = reset() id="reset_b">Reset</button>
+            <!--
+            <div class="note">What is GVT Program?</div>
+            <div class="note_2">German Volume Training(GVT) refers to a workout routine that involves 10 sets of 10 repetitions of an exercise. 60% of performer's 1RM is relaxed for 4 seconds, then contracted for 1 second. Between each repetitions, 60 second of rest is allowed.</div>
+            -->
+            <div class="credit">Developed by <a href="https://kennethkim0406.com"><u>Kenneth Kim @ UT Austin &#129060; </u></a></div>
         </div>
-        <div class="note">What is GVT Program?</div>
-        <div class="note_2">German Volume Training(GVT) refers to a workout routine that involves 10 sets of 10 repetitions of an exercise. 60% of performer's 1RM is relaxed for 4 seconds, then contracted for 1 seconds. Between each repetitions, 60 second of rest is allowed.</div>
-        <div class="credit">Developed by <a href="https://kennethkim0406.com"><u>Kenneth Kim @ UT Austin &#129060; </u></a></div>
     </body>
     <script>
         document.getElementById("reset_b").disabled = true
@@ -104,11 +114,13 @@
             timerElement.innerText = 0
             initialize = true
             var time = 0
+            document.getElementById("complete_set").disabled = true
             alert_reset()
             func = setInterval( function(){
                 timerElement.innerText = getTimerTime()
-                if(getTimerTime() == 1)
+                if(getTimerTime() == 60)
                 {
+                    document.getElementById("complete_set").disabled = false
                     alert()
                     clearInterval(func)
                 }
