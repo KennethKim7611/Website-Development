@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            GVX prgram
+            GVT prgram
         </title>
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
@@ -117,7 +117,7 @@
             alert_reset()
             func = setInterval( function(){
                 timerElement.innerText = getTimerTime()
-                if(getTimerTime() == 60)
+                if(getTimerTime() >= 60)
                 {
                     document.getElementById("complete_set").disabled = false
                     alert()
@@ -157,6 +157,8 @@
         function alert() 
         {
             document.body.style.backgroundColor = "tomato"
+            var audio = new Audio('https://storage.cloudconvert.com/tasks/a806f066-a801-4745-87d9-d8ce10ad75c2/mixkit-access-allowed-tone-2869.mp3?AWSAccessKeyId=cloudconvert-production&Expires=1647742906&Signature=Rbao%2FVFnrpzAI86rpNuSD2KlRNA%3D&response-content-disposition=inline%3B%20filename%3D%22mixkit-access-allowed-tone-2869.mp3%22&response-content-type=audio%2Fmpeg');
+            audio.play();
         }
         function alert_reset()
         {
