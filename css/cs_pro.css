@@ -146,6 +146,14 @@ a:hover{
   text-decoration: none;
 }
 a:visited{
-  text-decoration: none;
-  color: black;
+  text-decoration: none !important;
+  color: black !important;
+}
+video{
+  width:50vh;
+  height:auto;
+}
+.GVT {
+  height:50vh !important;
+  width:auto !important;
 }
