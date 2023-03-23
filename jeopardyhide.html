@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jeopardy chatGPT API - Kenneth Kim</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 20px;
+        }
+
+        #output-text {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <textarea id="input-text" rows="5" cols="50" placeholder="Ask a question, and I will answer yes/no"></textarea>
+    </div>
+    <div>
+
+        <button onclick="showOutput()">Ask</button>
+        <button onclick="generateAnimal()">Generate</button>
+    </div>
+
+    <div id="output-text"></div>
+    <div>-----</div>
+    <div id="Answer"></div>
+
+    <script type='text/javascript' src='js\config.js'></script>
+    <script type='text/javascript' src='js\jeopardy.js'></script>
+    
+</body>
+
+</html>
