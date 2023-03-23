@@ -1,0 +1,6 @@
+steps:
+  - name: action
+    env: 
+      API_KEY: ${{ secrets.API_KEY }}
+    run: |
+    nbdev_test_nbs
