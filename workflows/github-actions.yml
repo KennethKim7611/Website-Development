@@ -1,17 +1,18 @@
-name: github Actions
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  my_job:
-    runs-on: ubuntu-latest
-    env:
-      API_KEY: ${{ secrets.API_KEY }}
-    steps:
-      - name: Checkout code
+   ...
+   steps:
+      - name: Git checkout
         uses: actions/checkout@v2
-      - name: Run JavaScript code
-        run: node my-script.js
+
+      - name: Use Node 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Install Dependencies (prod)
+        run: yarn install --frozen-lockfile --production
+
+      - name: Run Tests (JEST)
+        run: yarn test --ci --silent --testPathIgnorePatterns=experimental
+        env:
+          CI: true
+          API_KEY: ${{ secrets.API_KEY }}
