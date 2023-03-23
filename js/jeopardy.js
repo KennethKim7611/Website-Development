@@ -1,7 +1,6 @@
-var token = config.API_KEY;
 
 const chatGPT = async (messages, parameters = {}) => {
-    const apikey = process.env.API_KEY;
+    const apikey = config.API_KEY;
     if (messages[0].constructor === String) return await chatGPT([['user', messages[0]]]);
     messages = messages.map(line => ({ role: line[0], content: line[1].trim() }))
     console.log(1)
