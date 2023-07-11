@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Your Hacking Profile</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #000;
+    }
+
+    #background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    #profile {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+      font-family: Arial, sans-serif;
+    }
+
+    #profile h1 {
+      font-size: 48px;
+      margin: 10px 0;
+    }
+
+    #profile p {
+      font-size: 24px;
+      margin: 5px 0;
+    }
+
+    #background span {
+      color: green;
+    }
+
+    @keyframes binary-flow {
+      0% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(100vh);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="background">
+    <!-- Add JavaScript code here to make the 0s and 1s flow down as the background -->
+  </div>
+
+  <div id="profile">
+    <!-- ...profile content... -->
+  </div>
+
+  <script>
+    // JavaScript code for the background animation
+    const background = document.getElementById('background');
+    const numCharacters = 100; // Adjust the number of characters as needed
+
+    // Generate a random 0 or 1
+    function generateBinary() {
+      return Math.floor(Math.random() * 2);
+    }
+
+    // Create and position the binary elements
+    function createBinaryElements() {
+      const binaryElements = [];
+
+      for (let i = 0; i < numCharacters; i++) {
+        const binaryElement = document.createElement('span');
+        binaryElement.innerText = generateBinary();
+        binaryElement.style.position = 'absolute';
+        binaryElement.style.left = Math.random() * 100 + '%';
+        binaryElements.push(binaryElement);
+        background.appendChild(binaryElement);
+      }
+
+      return binaryElements;
+    }
+
+    // Animate the binary elements
+    function animateBinaryElements() {
+      const binaryElements = createBinaryElements();
+      const animationDuration = 5; // Adjust the duration as needed
+
+      binaryElements.forEach((element) => {
+        const randomOffset = Math.random() * -100; // Starts from above the screen
+        const randomDuration = (Math.random() * 5 + animationDuration) + 's';
+
+        element.style.top = randomOffset + '%';
+        element.style.animation = `binary-flow ${randomDuration} linear infinite`;
+      });
+    }
+
+    animateBinaryElements();
+  </script>
+</body>
+</html>
